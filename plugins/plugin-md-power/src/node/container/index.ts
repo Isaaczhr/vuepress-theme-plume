@@ -6,8 +6,10 @@ import { alignPlugin } from './align.js'
 import { cardPlugin } from './card.js'
 import { chatPlugin } from './chat.js'
 import { codeTabs } from './codeTabs.js'
+import { codeTreePlugin } from './codeTree.js'
 import { collapsePlugin } from './collapse.js'
 import { demoWrapperPlugin } from './demoWrapper.js'
+import { fieldPlugin } from './field.js'
 import { fileTreePlugin } from './fileTree.js'
 import { langReplPlugin } from './langRepl.js'
 import { npmToPlugins } from './npmTo.js'
@@ -50,6 +52,10 @@ export async function containerPlugin(
     fileTreePlugin(md, isPlainObject(options.fileTree) ? options.fileTree : {})
   }
 
+  if (options.codeTree) {
+    codeTreePlugin(md, app, isPlainObject(options.codeTree) ? options.codeTree : {})
+  }
+
   if (options.timeline)
     timelinePlugin(md)
 
@@ -58,4 +64,7 @@ export async function containerPlugin(
 
   if (options.chat)
     chatPlugin(md)
+
+  if (options.field)
+    fieldPlugin(md)
 }
