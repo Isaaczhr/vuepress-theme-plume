@@ -1,7 +1,7 @@
 {
   "name": "vuepress-theme-plume",
   "type": "module",
-  "version": "1.0.0-rc.143",
+  "version": "1.0.0-rc.151",
   "description": "A Blog&Document Theme for VuePress 2.0",
   "author": "pengzhanbo <q942450674@outlook.com> (https://github.com/pengzhanbo/)",
   "license": "MIT",
@@ -56,13 +56,13 @@
     "node": "^20.6.0 || >=22.0.0"
   },
   "scripts": {
-    "dev": "pnpm '/(copy|tsup):watch/'",
-    "build": "pnpm run copy && pnpm run tsup",
+    "dev": "pnpm '/(copy|tsdown):watch/'",
+    "build": "pnpm run tsdown && pnpm run copy",
     "clean": "rimraf --glob ./lib",
     "copy": "cpx \"src/**/*.{d.ts,vue,css,scss,jpg,png,woff2}\" lib",
     "copy:watch": "cpx \"src/**/*.{d.ts,vue,css,scss,jpg,png,woff2}\" lib -w",
-    "tsup": "tsup --config tsup.config.ts",
-    "tsup:watch": "tsup --config tsup.config.ts --watch -- -c"
+    "tsdown": "tsdown",
+    "tsdown:watch": "tsdown --watch -- -c"
   },
   "peerDependencies": {
     "@iconify/json": "catalog:peer",
@@ -128,7 +128,7 @@
     "esbuild": "catalog:prod",
     "fast-glob": "catalog:prod",
     "gray-matter": "catalog:prod",
-    "json2yaml": "catalog:prod",
+    "js-yaml": "catalog:prod",
     "katex": "catalog:prod",
     "local-pkg": "catalog:prod",
     "nanoid": "catalog:prod",

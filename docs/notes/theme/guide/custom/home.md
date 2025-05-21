@@ -129,7 +129,8 @@ config:
 **效果：**
 
 :::demo-wrapper img no-padding
-<img src="/images/custom-banner.jpg" alt="" />
+
+![banner](/images/custom-banner.jpg)
 :::
 
 ### hero
@@ -433,7 +434,7 @@ config:
 **效果：**
 
 :::demo-wrapper img no-padding
-<img src="/images/custom-features.jpg" alt="" />
+<img src="/images/custom-features.jpg" alt="custom-features" />
 :::
 
 ### text-image | image-text
@@ -617,10 +618,10 @@ yarn add vuepress@next vuepress-theme-plume
 
 ```vue
 <script setup lang="ts">
-import type { PlumeHomeConfigBase } from 'vuepress-theme-plume'
+import type { ThemeHomeConfigBase } from 'vuepress-theme-plume'
 import { VPHomeBox } from 'vuepress-theme-plume/client'
 
-const props = defineProps<PlumeHomeConfigBase & {
+const props = defineProps<ThemeHomeConfigBase & {
   // 组件 props, frontmatter 中的属性将会传递给组件
 }>()
 </script>

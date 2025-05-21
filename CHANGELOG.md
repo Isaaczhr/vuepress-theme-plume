@@ -1,3 +1,130 @@
+# [1.0.0-rc.151](https://github.com/pengzhanbo/vuepress-theme-plume/compare/v1.0.0-rc.150...v1.0.0-rc.151) (2025-05-19)
+
+
+### Bug Fixes
+
+* **cli:** template generate fail ([d63deb5](https://github.com/pengzhanbo/vuepress-theme-plume/commit/d63deb5076a21575d64bbb0eac36d0259f4554cc))
+
+
+
+# [1.0.0-rc.150](https://github.com/pengzhanbo/vuepress-theme-plume/compare/v1.0.0-rc.149...v1.0.0-rc.150) (2025-05-19)
+
+
+### Bug Fixes
+
+* **theme:** fix incorrect icon rendering, close [#599](https://github.com/pengzhanbo/vuepress-theme-plume/issues/599) ([#600](https://github.com/pengzhanbo/vuepress-theme-plume/issues/600)) ([cd9c664](https://github.com/pengzhanbo/vuepress-theme-plume/commit/cd9c664e81f93eb877701a7851094c0f09949a08))
+
+
+### Features
+
+* **cli:** improve template ([2ced06b](https://github.com/pengzhanbo/vuepress-theme-plume/commit/2ced06b72933eb9ed0e1c940ad029521c7ad7e4d))
+
+
+
+# [1.0.0-rc.149](https://github.com/pengzhanbo/vuepress-theme-plume/compare/v1.0.0-rc.148...v1.0.0-rc.149) (2025-05-17)
+
+
+### Bug Fixes
+
+* **theme:** task list rendering error within firefox ([0425046](https://github.com/pengzhanbo/vuepress-theme-plume/commit/0425046e9eb52db09654ec4415fd1a80ebc9d641))
+
+
+### Features
+
+* add multiple provider support for icon, close [#568](https://github.com/pengzhanbo/vuepress-theme-plume/issues/568) ([#596](https://github.com/pengzhanbo/vuepress-theme-plume/issues/596)) ([1497325](https://github.com/pengzhanbo/vuepress-theme-plume/commit/149732520a02b2a2042b466869f342e019cb6e88))
+* **plugin-md-power:** add flex container ([#597](https://github.com/pengzhanbo/vuepress-theme-plume/issues/597)) ([79af255](https://github.com/pengzhanbo/vuepress-theme-plume/commit/79af255cd8dd1f01cdc05b95ff7278a28009b5d0))
+
+
+### Performance Improvements
+
+* improve code block styles ([5d25599](https://github.com/pengzhanbo/vuepress-theme-plume/commit/5d255998dbe4f0e008a88a07cc3c3e75b6ce3d00))
+* update deps to latest ([9ef8322](https://github.com/pengzhanbo/vuepress-theme-plume/commit/9ef832294086b576318015312bea0ee7a3a7e616))
+
+
+
+# [1.0.0-rc.148](https://github.com/pengzhanbo/vuepress-theme-plume/compare/v1.0.0-rc.147...v1.0.0-rc.148) (2025-05-13)
+
+
+### Bug Fixes
+
+* **cli:** tsdown `define` error ([6677dca](https://github.com/pengzhanbo/vuepress-theme-plume/commit/6677dcae624a5f2a670e8a0e92724ec198795cec))
+
+
+
+# [1.0.0-rc.147](https://github.com/pengzhanbo/vuepress-theme-plume/compare/v1.0.0-rc.146...v1.0.0-rc.147) (2025-05-12)
+
+
+### Bug Fixes
+
+* **plugin-md-power:** incorrect collapsed lines in code-tree, close [#587](https://github.com/pengzhanbo/vuepress-theme-plume/issues/587) ([#588](https://github.com/pengzhanbo/vuepress-theme-plume/issues/588)) ([9fef665](https://github.com/pengzhanbo/vuepress-theme-plume/commit/9fef6654ae31af17db603e90ec26d7f4712dcd73))
+* **theme:** fix git-plugin execute error when `git: false` ([#591](https://github.com/pengzhanbo/vuepress-theme-plume/issues/591)) ([2c9006c](https://github.com/pengzhanbo/vuepress-theme-plume/commit/2c9006caf7d6509276cdb11b993d43cd34125bc5))
+* **theme:** improve link handling and href binding logic ([f9276fd](https://github.com/pengzhanbo/vuepress-theme-plume/commit/f9276fdb7547c5e504ddcd7660862f44e70b8044))
+* **theme:** simplify icon rendering ([bd0e940](https://github.com/pengzhanbo/vuepress-theme-plume/commit/bd0e9404da5a9afdfda62f1af06f44372d564932))
+* **theme:** yaml parsing error caused by special chars ([#586](https://github.com/pengzhanbo/vuepress-theme-plume/issues/586)) ([61ca08c](https://github.com/pengzhanbo/vuepress-theme-plume/commit/61ca08c8b4c60c6fd38c534a18953de9f6e6920c))
+
+
+### Features
+
+* **plugin-md-power:** add timeout to `image-size` ([#592](https://github.com/pengzhanbo/vuepress-theme-plume/issues/592)) ([79ab31d](https://github.com/pengzhanbo/vuepress-theme-plume/commit/79ab31d0f2409ab3031518db8126f8c98563a003))
+
+
+### Performance Improvements
+
+* update deps to latest ([c4da089](https://github.com/pengzhanbo/vuepress-theme-plume/commit/c4da089745adf2bfbc42b8b2182ce7a206351df1))
+
+
+
+# [1.0.0-rc.146](https://github.com/pengzhanbo/vuepress-theme-plume/compare/v1.0.0-rc.145...v1.0.0-rc.146) (2025-05-06)
+
+
+### Features
+
+* **plugin-md-power:** add code-tree container and embed syntax, close [#567](https://github.com/pengzhanbo/vuepress-theme-plume/issues/567) ([#584](https://github.com/pengzhanbo/vuepress-theme-plume/issues/584)) ([31e3b41](https://github.com/pengzhanbo/vuepress-theme-plume/commit/31e3b41a2706e9adb3470a56da9d8822e88eeb96))
+
+
+### Performance Improvements
+
+* update deps to latest ([07822e4](https://github.com/pengzhanbo/vuepress-theme-plume/commit/07822e41853b57b995ea30e90f6bee3e15aee6c5))
+
+
+
+# [1.0.0-rc.145](https://github.com/pengzhanbo/vuepress-theme-plume/compare/v1.0.0-rc.144...v1.0.0-rc.145) (2025-04-30)
+
+
+### Features
+
+* **plugin-md-power:** add `field` and `field-group` container, close [#566](https://github.com/pengzhanbo/vuepress-theme-plume/issues/566) ([#579](https://github.com/pengzhanbo/vuepress-theme-plume/issues/579)) ([56c5eb5](https://github.com/pengzhanbo/vuepress-theme-plume/commit/56c5eb5257fb59a956bb09d313f1d30f452640f3))
+* **plugin-md-power:** add diff syntax in file-tree container, close [#577](https://github.com/pengzhanbo/vuepress-theme-plume/issues/577) ([#578](https://github.com/pengzhanbo/vuepress-theme-plume/issues/578)) ([10708c9](https://github.com/pengzhanbo/vuepress-theme-plume/commit/10708c97b4143bce6ab6ef3ed65b09d00c4a3513))
+* **theme:** add comment and markdown content into friends page ([#580](https://github.com/pengzhanbo/vuepress-theme-plume/issues/580)) ([a3208fc](https://github.com/pengzhanbo/vuepress-theme-plume/commit/a3208fc3098df5cc58fc170b7982c4d3c6ae47bf))
+
+
+### Performance Improvements
+
+* update deps to latest ([f13e967](https://github.com/pengzhanbo/vuepress-theme-plume/commit/f13e967c66730bda321557fc9ec83c37b3fa85ef))
+
+
+
+# [1.0.0-rc.144](https://github.com/pengzhanbo/vuepress-theme-plume/compare/v1.0.0-rc.143...v1.0.0-rc.144) (2025-04-28)
+
+
+### Bug Fixes
+
+* **plugin-md-power:** incorrect demo container rendering ([0bf7c86](https://github.com/pengzhanbo/vuepress-theme-plume/commit/0bf7c865ac327cae6af8ece39b54389ae4236faf))
+
+
+### Features
+
+* **plugin-md-power:** add createContainerSyntaxPlugin for custom container rendering ([#564](https://github.com/pengzhanbo/vuepress-theme-plume/issues/564)) ([2e7f69b](https://github.com/pengzhanbo/vuepress-theme-plume/commit/2e7f69bb623aa9a57868ad029aef645973cfba2e))
+* **plugin-md-power:** refactor file-tree container, close [#565](https://github.com/pengzhanbo/vuepress-theme-plume/issues/565) ([#572](https://github.com/pengzhanbo/vuepress-theme-plume/issues/572)) ([599e43f](https://github.com/pengzhanbo/vuepress-theme-plume/commit/599e43fd3cd6d982af683592e37bbb18754baee6))
+* **theme:** add support for `author` and `creation` in global copyright config, close [#573](https://github.com/pengzhanbo/vuepress-theme-plume/issues/573) ([#576](https://github.com/pengzhanbo/vuepress-theme-plume/issues/576)) ([7ecce2d](https://github.com/pengzhanbo/vuepress-theme-plume/commit/7ecce2db5cee72f441eda7ad5d2d557ecc36887d))
+
+
+### Performance Improvements
+
+* update deps to latest ([740bc4e](https://github.com/pengzhanbo/vuepress-theme-plume/commit/740bc4e364f1d2719fdce69a7ba8b5ccf1afed5e))
+
+
+
 # [1.0.0-rc.143](https://github.com/pengzhanbo/vuepress-theme-plume/compare/v1.0.0-rc.142...v1.0.0-rc.143) (2025-04-19)
 
 

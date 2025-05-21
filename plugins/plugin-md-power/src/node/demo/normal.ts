@@ -67,7 +67,7 @@ function codeToHtml(md: Markdown, source: NormalCode, info: string): string {
   return md.render(content, {})
 }
 
-export async function compileCode(code: NormalCode, output: string) {
+export async function compileCode(code: NormalCode, output: string): Promise<void> {
   markDemoRender()
   const res = { jsLib: [], cssLib: [], script: '', css: '', html: '' }
   if (!fs.existsSync(output))
@@ -126,10 +126,9 @@ export function normalEmbed(
     env.demoFiles.push(demo)
     insertSetupScript({ ...demo, path: output }, env)
   }
-
-  return `<VPDemoNormal${stringifyAttrs({ config: name, title, desc, expanded })}>
+  return `<VPDemoNormal${stringifyAttrs({ ':config': name, title, desc, expanded })}>
     ${codeToHtml(md, source, codeSetting)}
-  </VPDemoNormal$>`
+  </VPDemoNormal>`
 }
 
 export const normalContainerRender: DemoContainerRender = {
@@ -148,8 +147,7 @@ export const normalContainerRender: DemoContainerRender = {
 
     const source = parseContainerCode(codeMap)
     compileCode(source, output)
-
-    return `<VPDemoNormal${stringifyAttrs({ config: name, title, desc, expanded })}>`
+    return `<VPDemoNormal${stringifyAttrs({ ':config': name, title, desc, expanded })}>`
   },
 
   after: () => '</VPDemoNormal>',
