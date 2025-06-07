@@ -1,3 +1,4 @@
+import type { UserConfig } from 'vuepress'
 import fs from 'node:fs'
 import path from 'node:path'
 import { viteBundler } from '@vuepress/bundler-vite'
@@ -34,6 +35,8 @@ export default defineUserConfig({
 
   define: {
     __VUEPRESS_VERSION__: vuepress,
+    // debug hydration mismatch
+    // __VUE_PROD_HYDRATION_MISMATCH_DETAILS__: 'true',
   },
 
   alias: {
@@ -46,4 +49,4 @@ export default defineUserConfig({
   shouldPrefetch: false,
 
   theme,
-})
+}) as UserConfig
