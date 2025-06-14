@@ -2,6 +2,7 @@ import type { App } from 'vuepress/core'
 import type { MarkdownPowerPluginOptions } from '../shared/index.js'
 import { ensureEndingSlash } from '@vuepress/helper'
 import { getDirname, path } from 'vuepress/utils'
+import { prepareIcon } from './icon/index.js'
 
 const { url: filepath } = import.meta
 const __dirname = getDirname(filepath)
@@ -10,7 +11,7 @@ const CLIENT_FOLDER = ensureEndingSlash(
   path.resolve(__dirname, '../client'),
 )
 
-export async function prepareConfigFile(app: App, options: MarkdownPowerPluginOptions) {
+export async function prepareConfigFile(app: App, options: MarkdownPowerPluginOptions): Promise<string> {
   const imports = new Set<string>()
   const enhances = new Set<string>()
 
@@ -70,9 +71,14 @@ export async function prepareConfigFile(app: App, options: MarkdownPowerPluginOp
     enhances.add(`app.component('CanIUseViewer', CanIUse)`)
   }
 
-  if (options.fileTree) {
+  if (options.fileTree || options.codeTree) {
     imports.add(`import FileTreeNode from '${CLIENT_FOLDER}components/FileTreeNode.vue'`)
     enhances.add(`app.component('FileTreeNode', FileTreeNode)`)
+  }
+
+  if (options.codeTree) {
+    imports.add(`import VPCodeTree from '${CLIENT_FOLDER}components/VPCodeTree.vue'`)
+    enhances.add(`app.component('VPCodeTree', VPCodeTree)`)
   }
 
   if (options.artPlayer) {
@@ -120,6 +126,13 @@ export async function prepareConfigFile(app: App, options: MarkdownPowerPluginOp
     imports.add(`import '${CLIENT_FOLDER}styles/chat.css'`)
   }
 
+  if (options.field) {
+    imports.add(`import VPField from '${CLIENT_FOLDER}components/VPField.vue'`)
+    enhances.add(`app.component('VPField', VPField)`)
+  }
+
+  const setupIcon = prepareIcon(imports, options.icon)
+
   return app.writeTemp(
     'md-power/config.js',
     `\
@@ -133,6 +146,9 @@ export default defineClientConfig({
 ${Array.from(enhances.values())
   .map(item => `    ${item}`)
   .join('\n')}
+  },
+  setup() {
+    ${setupIcon}
   }
 })
 `,

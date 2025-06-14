@@ -22,11 +22,17 @@ search: false
 ![cat](/images/sponsor/cute-cat.jpg){width="64px"}
 :::
 
+<div class="sponsor-table">
+
 | ::bi:alipay:: AliPay                   | ::fa:wechat:: WeChat                      |
-| -------------------------------------- | ----------------------------------------- |
-| ![Alipay](https://static.pengzhanbo.cn/images/sponsor/ali_pay.jpg){width="300" height="300" style="width:150px"} | ![WeChat](https://static.pengzhanbo.cn/images/sponsor/wechat_pay.jpg){width="300" height="300" style="width:150px"} |
+| :------------------------------------: | :---------------------------------------: |
+| ![Alipay](https://static.pengzhanbo.cn/images/sponsor/ali_pay.jpg){width="300" height="300"} | ![WeChat](https://static.pengzhanbo.cn/images/sponsor/wechat_pay.jpg){width="300" height="300"} |
+
+</div>
 
 ## 打赏记录
+
+感谢大家对主题的大力支持！
 
 <div class="sponsor-list">
 
@@ -58,11 +64,36 @@ search: false
 | *。  | 2025-03-08 |   6.66 | -                                              |
 | *超  | 2025-04-03 |  18.88 | 感谢                                           |
 | n*l  | 2025-04-22 |  18.88 | 感谢此主题为 fba 架构官方文档提供大力支持，作者回复和功能新增都迅如闪电，无一不令人惊叹，碉堡了！ |
+| l*h  | 2025-04-28 |  18.88 | 感谢 plume 开源主题为腾马科技官方文档提供的大力支持！开源不易，鼓励支持！ |
+| *羊  | 2025-04-29 |  50.00 | 不错不错👍🏻，支持一下                           |
+| *。  | 2025-05-07 |  18.88 | 大佬有问必答，请你喝杯奶茶。                   |
+| *꧂  | 2025-05-16 |  20.00 | -                                              |
+| *年  | 2025-05-23 |  10.00 | -                                              |
+| *ω   | 2025-06-01 |   2.33 | 学长加油 lol                                   |
+| X*L  | 2025-06-04 |  20.00 | 感谢大大付出，真的很好用啊！建议走商业化路线，比如出付费快速安装包，阿里云一键安装包，快速企业站等。个人脑洞，大大见笑了 |
+| *✨   | 2025-06-10 |   9.90 | 瑞幸                                           |
+| *✨   | 2025-06-10 |   9.90 | 另一杯瑞幸                                     |
+| *✨   | 2025-06-10 |   9.90 | 又一杯瑞幸                                     |
+| *✨   | 2025-06-13 |   9.90 | 瑞幸                                           |
 
 </div>
 
 <style>
+.vp-doc .sponsor-table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vp-doc .sponsor-table img {
+  width: 150px;
+}
+
 @media (min-width: 768px) {
+  .vp-doc .sponsor-table img {
+    width: 180px;
+  }
+
   .vp-doc .sponsor-list table tr td:nth-child(1),
   .vp-doc .sponsor-list table tr td:nth-child(2),
   .vp-doc .sponsor-list table tr td:nth-child(3) {
