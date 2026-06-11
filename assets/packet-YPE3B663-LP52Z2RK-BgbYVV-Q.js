@@ -1,0 +1,1 @@
+import{Fr as e}from"./common-DL_L_meI.js";export{e as createPacketServices};

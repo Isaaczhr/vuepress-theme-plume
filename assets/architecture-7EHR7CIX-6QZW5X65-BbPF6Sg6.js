@@ -1,0 +1,1 @@
+import{Vr as e}from"./common-DL_L_meI.js";export{e as createArchitectureServices};
