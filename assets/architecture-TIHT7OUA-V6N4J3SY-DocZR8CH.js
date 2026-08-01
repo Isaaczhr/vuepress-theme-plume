@@ -1,0 +1,1 @@
+import{Ut as e}from"./common-DWaCMcWt.js";export{e as createArchitectureServices};
