@@ -1,3 +1,9 @@
+# [1.0.0-rc.209](https://github.com/pengzhanbo/vuepress-theme-plume/compare/v1.0.0-rc.208...v1.0.0-rc.209) (2026-09-07)
+
+### Features
+
+* update vuepress to `2.0.0-rc.31` ([8e1fc04](https://github.com/pengzhanbo/vuepress-theme-plume/commit/8e1fc0458255b257793941561dd4890c5905b858))
+
 # [1.0.0-rc.208](https://github.com/pengzhanbo/vuepress-theme-plume/compare/v1.0.0-rc.207...v1.0.0-rc.208) (2026-09-03)
 
 
